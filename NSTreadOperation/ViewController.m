@@ -89,12 +89,9 @@
     }];
     [task resume];
     
-    [self performSelectorInBackground:@selector(backgroundTest) withObject:nil];
+  
 }
 
-- (void)backgroundTest {
-    NSLog(@"后台执行");
-}
 
 - (void)updateImage:(UIImage *)image {
     self.imageView.image = [[self class] image:image scaleSize:CGSizeMake(self.imageView.frame.size.width, self.imageView.frame.size.height)];
